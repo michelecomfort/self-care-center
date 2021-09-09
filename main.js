@@ -33,20 +33,37 @@ function generateRandomIndex(list) {
   var randomIndex = Math.floor(Math.random() * list.length)
   return randomIndex
 }
-//retrieve message based on radio that was clicked
+
 function retrieveMessage() {
-  if (mantraBtn.checked === true) {
-    var randomMantra = mantras[generateRandomIndex(mantras)]
-    messageReveal.innerText = `🌟 ${randomMantra} 🌟`
-    for (var i = 0; i < mantras.length; i++){
-      if (mantras[i] === randomMantra){
-        mantras.splice(i, 1)
-      } if (mantras.length <= 0) {
-        messageReveal.innerText = `Please check back tomorrow for more daily mantras!`
-      }
+  if (mantraBtn.checked) {
+    retrieveMantra()
+  } else if (affirmationBtn.checked) {
+    retrieveAffirmation()
+  }
+}
+
+function retrieveMantra() {
+  var randomMantra = mantras[generateRandomIndex(mantras)]
+  messageReveal.innerText = `🌟 ${randomMantra} 🌟`
+  for (var i = 0; i < mantras.length; i++) {
+    if (mantras[i] === randomMantra) {
+      mantras.splice(i, 1)
     }
-  } else if (affirmationBtn.checked === true) {
-    var randomAffirmation = affirmations[generateRandomIndex(affirmations)]
-    messageReveal.innerText = `🌟 ${randomAffirmation} 🌟`
+    if (mantras.length === 0) {
+      messageReveal.innerText = `Please check back tomorrow for more daily mantras!`
+    }
+  }
+}
+
+function retrieveAffirmation() {
+  var randomAffirmation = affirmations[generateRandomIndex(affirmations)]
+  messageReveal.innerText = `🌟 ${randomAffirmation} 🌟`
+  for (var i = 0; i < affirmations.length; i++) {
+    if (affirmations[i] === randomAffirmation) {
+      affirmations.splice(i, 1)
+    }
+    if (affirmations.length === 0) {
+      messageReveal.innerText = `Please check back tomorrow for more daily affirmations!`
+    }
   }
 }
