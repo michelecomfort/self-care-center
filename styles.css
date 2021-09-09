@@ -10,9 +10,23 @@ body {
   background-image: linear-gradient(180deg, rgba(19, 77, 113, 1) 0%, rgba(120, 167, 198, 1) 50%, rgba(247, 228, 191, 1) 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: Quicksand;
+  /* background-size: cover; */
+  font-family: 'Quicksand', sans-serif;
   /* height: 100px; */
+}
+
+img {
+  height: 120px;
+  margin-top: 20px;
+  width: 120px;
+}
+
+img:hover {
+  transform: scale(1.54);
+}
+
+.hidden {
+  display: none;
 }
 
 .container {
@@ -27,7 +41,8 @@ body {
 }
 
 .heading,
-.question {
+.question,
+.welcome {
   color: #ffffff;
   text-align: center;
 }
@@ -39,6 +54,13 @@ body {
 .input-selector {
   height: 70px;
   margin: auto;
+  padding: 20px;
+  width: 33%;
+}
+
+.login {
+  height: 200px;
+  margin: 125px auto;
   padding: 20px;
   width: 33%;
 }
@@ -57,7 +79,7 @@ body {
   width: 60%;
 }
 
-.receiveBtn {
+.button {
   background-color: #134d71;
   border-radius: 4px;
   color: white;
@@ -66,7 +88,7 @@ body {
   padding: 8px 30px;
 }
 
-.receiveBtn:hover {
+.button:hover {
   box-shadow: 10px 5px 5px gray;
 }
 
@@ -75,15 +97,6 @@ body {
   padding: 0 20px;
 }
 
-img {
-  height: 120px;
-  margin-top: 20px;
-  width: 120px;
-}
-
-img:hover {
-  transform: scale(1.54);
-}
 /* background-image alternatives */
 /* background-image: url(backgroundGradient.jpg); */
 /* background: rgb(19,77,113);

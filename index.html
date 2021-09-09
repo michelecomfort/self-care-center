@@ -7,24 +7,41 @@
 </head>
 
 <body>
-  <div class="container">
-    <main>
-      <h1 class="heading item">✨ Self Care Center ✨</h1>
-      <h2 class="question item">Which type of message?</h2>
-      <div class="input-selector item box">
+
+    <main class="container">
+
+      <section class="login box">
+        <h1>Welcome to the Self Care Center</h1>
+        <p>Enter Your Name to Continue</p>
+        <label for="name">Name:<input type="text" required="required" id="name-input"/></label>
+        <button class="enter-button button">Enter</button>
+      </section>
+
+    <article class="main-section hidden">
+
+      <heading>
+        <h1 class="heading item">✨ Self Care Center ✨</h1>
+        <h1 class="welcome item">Welcome, Name</h1>
+        <h2 class="question item">Which type of message?</h2>
+      </heading>
+
+      <section class="input-selector item box">
         <label>
           <input class="radioInput" name="radioBtn" type="radio" id="affirmation" value="affirmation"/>affirmation</label>
         <label>
           <input class="radioInput" name="radioBtn" type="radio" id="mantra" value="mantra"/>mantra</label>
-        <br>
-        <button class="receiveBtn">Receive Message</button>
-      </div>
+        <aside>
+          <button class="receiveBtn button">Receive Message</button>
+        </aside>
+      </section>
 
       <section class="message-reveal item box">
         <img src="assets/meditate.svg" alt="meditating-person">
       </section>
+
+    </article>
     </main>
-  </div>
+
   <script type="text/javascript" src="main.js"></script>
 </body>
 

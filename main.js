@@ -25,8 +25,15 @@ var mantraBtn = document.getElementById("mantra")
 var affirmationBtn = document.getElementById("affirmation")
 var receiveMessageBtn = document.querySelector(".receiveBtn")
 var messageReveal = document.querySelector(".message-reveal")
+var enterBtn = document.querySelector(".enter-button")
+var personName = document.querySelector(".name")
+var nameInput = document.getElementById("name-input")
+var welcomeMessage = document.querySelector(".welcome")
+var mainSection = document.querySelector(".main-section")
+var loginSection = document.querySelector(".login")
 
 receiveMessageBtn.addEventListener("click", retrieveMessage)
+enterBtn.addEventListener("click", login)
 
 //get random index of one of the arrays
 function generateRandomIndex(list) {
@@ -44,12 +51,12 @@ function retrieveMessage() {
 
 function retrieveMantra() {
   var randomMantra = mantras[generateRandomIndex(mantras)]
-  messageReveal.innerText = `🌟 ${randomMantra} 🌟`
   for (var i = 0; i < mantras.length; i++) {
     if (mantras[i] === randomMantra) {
+      messageReveal.innerText = `🌟 ${randomMantra} 🌟`
       mantras.splice(i, 1)
     }
-    if (mantras.length === 0) {
+    if (!mantras.length) {
       messageReveal.innerText = `Please check back tomorrow for more daily mantras!`
     }
   }
@@ -57,13 +64,21 @@ function retrieveMantra() {
 
 function retrieveAffirmation() {
   var randomAffirmation = affirmations[generateRandomIndex(affirmations)]
-  messageReveal.innerText = `🌟 ${randomAffirmation} 🌟`
   for (var i = 0; i < affirmations.length; i++) {
     if (affirmations[i] === randomAffirmation) {
+      messageReveal.innerText = `🌟 ${randomAffirmation} 🌟`
       affirmations.splice(i, 1)
     }
-    if (affirmations.length === 0) {
+    if (!affirmations.length) {
       messageReveal.innerText = `Please check back tomorrow for more daily affirmations!`
     }
   }
+}
+
+function login() {
+  // personName.innerHTML = " "
+  personName = nameInput.value
+  welcomeMessage.innerText = `Welcome, ${personName}`
+  mainSection.classList.remove("hidden")
+  loginSection.classList.add("hidden")
 }
