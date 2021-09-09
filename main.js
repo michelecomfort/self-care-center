@@ -38,6 +38,13 @@ function retrieveMessage() {
   if (mantraBtn.checked === true) {
     var randomMantra = mantras[generateRandomIndex(mantras)]
     messageReveal.innerText = `🌟 ${randomMantra} 🌟`
+    for (var i = 0; i < mantras.length; i++){
+      if (mantras[i] === randomMantra){
+        mantras.splice(i, 1)
+      } if (mantras.length <= 0) {
+        messageReveal.innerText = `Please check back tomorrow for more daily mantras!`
+      }
+    }
   } else if (affirmationBtn.checked === true) {
     var randomAffirmation = affirmations[generateRandomIndex(affirmations)]
     messageReveal.innerText = `🌟 ${randomAffirmation} 🌟`

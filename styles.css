@@ -12,50 +12,48 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 800px;
+  /* height: 100px; */
 }
 
 .container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: center; */
 }
 
 .item {
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
-.heading {
+.heading,
+.question {
   color: #ffffff;
   text-align: center;
 }
 
 .question {
-  color: #ffffff;
-  text-align: center;
   margin-top: 75px;
 }
 
 .input-selector {
-  background: #ffffff;
-  border-radius: 10px;
-  width: 400px;
+  width: 33%;
   height: 70px;
-  text-align: center;
   margin: auto;
   padding: 20px;
 }
 
-.message-reveal {
+.box {
   background: #ffffff;
-  width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.message-reveal {
+  width: 60%;
   height: 200px;
   margin: 70px auto 30px;
-  text-align: center;
-  vertical-align: middle;
   padding-top: 40px;
-  border-radius: 10px;
   font-size: 40px;
 }
 
@@ -68,6 +66,10 @@ body {
   font-family: Quicksand;
 }
 
+.receiveBtn:hover {
+  box-shadow: 10px 5px 5px gray;
+}
+
 .radioInput {
   margin: 0 30px;
   padding: 0 20px;
@@ -77,6 +79,10 @@ img {
   width: 120px;
   height: 120px;
   margin-top: 20px;
+}
+
+img:hover {
+  transform: scale(1.54);
 }
 /* background-image alternatives */
 /* background-image: url(backgroundGradient.jpg); */
