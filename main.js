@@ -37,8 +37,7 @@ enterBtn.addEventListener("click", login)
 
 //get random index of one of the arrays
 function generateRandomIndex(list) {
-  var randomIndex = Math.floor(Math.random() * list.length)
-  return randomIndex
+  return Math.floor(Math.random() * list.length)
 }
 
 function retrieveMessage() {
@@ -56,7 +55,7 @@ function retrieveMantra() {
   }
   for (var i = 0; i < mantras.length; i++) {
     if (mantras[i] === randomMantra) {
-      messageReveal.innerText = `🧘 ${randomMantra} 🧘`
+      messageReveal.innerText = `🧘 ${randomMantra}`
       mantras.splice(i, 1)
     }
   }
@@ -69,7 +68,7 @@ function retrieveAffirmation() {
   }
   for (var i = 0; i < affirmations.length; i++) {
     if (affirmations[i] === randomAffirmation) {
-      messageReveal.innerText = `🧘 ${randomAffirmation} 🧘`
+      messageReveal.innerText = `🧘 ${randomAffirmation}`
       affirmations.splice(i, 1)
     }
   }
