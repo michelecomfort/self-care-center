@@ -45,8 +45,12 @@ img:hover {
 .welcome {
   color: #ffffff;
   text-align: center;
+  margin-top: 50px;
 }
 
+.welcome {
+  font-size: 60px;
+}
 .question {
   margin-top: 75px;
 }

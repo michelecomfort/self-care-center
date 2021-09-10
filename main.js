@@ -51,34 +51,34 @@ function retrieveMessage() {
 
 function retrieveMantra() {
   var randomMantra = mantras[generateRandomIndex(mantras)]
+  if (!mantras.length) {
+    messageReveal.innerText = `Please check back tomorrow for more daily mantras!`
+  }
   for (var i = 0; i < mantras.length; i++) {
     if (mantras[i] === randomMantra) {
-      messageReveal.innerText = `🌟 ${randomMantra} 🌟`
+      messageReveal.innerText = `🧘 ${randomMantra} 🧘`
       mantras.splice(i, 1)
-    }
-    if (!mantras.length) {
-      messageReveal.innerText = `Please check back tomorrow for more daily mantras!`
     }
   }
 }
 
 function retrieveAffirmation() {
   var randomAffirmation = affirmations[generateRandomIndex(affirmations)]
+  if (!affirmations.length) {
+    messageReveal.innerText = `Please check back tomorrow for more daily affirmations!`
+  }
   for (var i = 0; i < affirmations.length; i++) {
     if (affirmations[i] === randomAffirmation) {
-      messageReveal.innerText = `🌟 ${randomAffirmation} 🌟`
+      messageReveal.innerText = `🧘 ${randomAffirmation} 🧘`
       affirmations.splice(i, 1)
-    }
-    if (!affirmations.length) {
-      messageReveal.innerText = `Please check back tomorrow for more daily affirmations!`
     }
   }
 }
 
 function login() {
-  // personName.innerHTML = " "
-  personName = nameInput.value
-  welcomeMessage.innerText = `Welcome, ${personName}`
+  var userInput = nameInput.value
+  var userName = userInput.charAt(0).toUpperCase() + userInput.slice(1)
+  welcomeMessage.innerText = `Welcome, ${userName}`
   mainSection.classList.remove("hidden")
   loginSection.classList.add("hidden")
 }

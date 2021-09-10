@@ -13,8 +13,9 @@
       <section class="login box">
         <h1>Welcome to the Self Care Center</h1>
         <p>Enter Your Name to Continue</p>
-        <label for="name">Name:<input type="text" required="required" id="name-input"/></label>
-        <button class="enter-button button">Enter</button>
+        <label for="name">Name:
+          <input type="text" name="name" required="required" min="1" max="12" id="name-input"/></label>
+        <button class="enter-button button" type=>Continue</button>
       </section>
 
     <article class="main-section hidden">
@@ -27,9 +28,9 @@
 
       <section class="input-selector item box">
         <label>
-          <input class="radioInput" name="radioBtn" type="radio" id="affirmation" value="affirmation"/>affirmation</label>
+          <input class="radioInput" name="radioBtn" type="radio" id="affirmation" value="affirmation"/><em>affirmation</em></label>
         <label>
-          <input class="radioInput" name="radioBtn" type="radio" id="mantra" value="mantra"/>mantra</label>
+          <input class="radioInput" name="radioBtn" type="radio" id="mantra" value="mantra"/><em>mantra</em></label>
         <aside>
           <button class="receiveBtn button">Receive Message</button>
         </aside>
