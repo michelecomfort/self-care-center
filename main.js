@@ -76,9 +76,14 @@ function retrieveAffirmation() {
 }
 
 function login() {
-  var userInput = nameInput.value
-  var userName = userInput.charAt(0).toUpperCase() + userInput.slice(1)
-  welcomeMessage.innerText = `Welcome, ${userName}`
-  mainSection.classList.remove("hidden")
-  loginSection.classList.add("hidden")
+  console.log("clicked!")
+  if (nameInput.value) {
+    var userInput = nameInput.value
+    var userName = userInput.charAt(0).toUpperCase() + userInput.slice(1)
+    welcomeMessage.innerText = `Welcome, ${userName}`
+    mainSection.classList.remove("hidden")
+    loginSection.classList.add("hidden")
+  } else {
+    alert('Please fill in your first name to continue...')
+  }
 }
