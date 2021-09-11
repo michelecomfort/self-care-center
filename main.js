@@ -36,6 +36,14 @@ receiveMessageBtn.addEventListener("click", retrieveMessage)
 enterBtn.addEventListener("click", login)
 
 //get random index of one of the arrays
+function showMainSection() {
+  mainSection.classList.remove("hidden")
+}
+
+function hideLoginSection() {
+  loginSection.classList.add("hidden")
+}
+
 function generateRandomIndex(list) {
   return Math.floor(Math.random() * list.length)
 }
@@ -77,11 +85,9 @@ function retrieveAffirmation() {
 function login() {
   console.log("clicked!")
   if (nameInput.value) {
-    var userInput = nameInput.value
-    var userName = userInput.charAt(0).toUpperCase() + userInput.slice(1)
-    welcomeMessage.innerText = `Welcome, ${userName}!`
-    mainSection.classList.remove("hidden")
-    loginSection.classList.add("hidden")
+    welcomeMessage.innerText = `Welcome, ${nameInput.value.charAt(0).toUpperCase() + nameInput.value.slice(1)}!`
+    showMainSection()
+    hideLoginSection()
   } else {
     alert('Please fill in your first name to continue...')
   }
