@@ -68,7 +68,7 @@ function retrieveAffirmation() {
   }
   for (var i = 0; i < affirmations.length; i++) {
     if (affirmations[i] === randomAffirmation) {
-      messageReveal.innerText = `🧘 ${randomAffirmation}`
+      messageReveal.innerText = `🌸 ${randomAffirmation}`
       affirmations.splice(i, 1)
     }
   }
@@ -79,7 +79,7 @@ function login() {
   if (nameInput.value) {
     var userInput = nameInput.value
     var userName = userInput.charAt(0).toUpperCase() + userInput.slice(1)
-    welcomeMessage.innerText = `Welcome, ${userName}`
+    welcomeMessage.innerText = `Welcome, ${userName}!`
     mainSection.classList.remove("hidden")
     loginSection.classList.add("hidden")
   } else {
