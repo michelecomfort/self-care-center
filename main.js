@@ -68,7 +68,7 @@ function retrieveAffirmation() {
   }
   for (var i = 0; i < affirmations.length; i++) {
     if (affirmations[i] === randomAffirmation) {
-      messageReveal.innerText = `🧘 ${randomAffirmation}`
+      messageReveal.innerText = `🌸 ${randomAffirmation}`
       affirmations.splice(i, 1)
     }
   }

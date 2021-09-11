@@ -34,3 +34,5 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 3. On this main page, you will then have the choice to receive either a daily affirmation or daily mantra to use. It is your choice which you would like to receive.
 
 4. If you don't enjoy the affirmation or mantra chosen for you, you may click the button again to receive a new message. Please note, that there are only several messages each day. After that, you will need to check back the following day to receive new mantras or affirmations.
+
+5. You then have the ability to favorite the mantras or affirmations that you like in order to view.
