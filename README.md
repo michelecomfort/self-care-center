@@ -29,7 +29,7 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 
 1. Upon first entering the site, please provide your first name in the name field. This will allow us to personalize the main page for you.
 
-2. After you have entered your first name, click the continue button to enter the site.
+2. After you have entered your first name, then either click the 'Continue' button or press 'Enter/Return' on your keyboard. Your first name should consist of at least 1 character and at most 15 characters.
 
 3. On this main page, you will then have the choice to receive either a daily affirmation or daily mantra to use. It is your choice which you would like to receive.
 
