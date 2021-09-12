@@ -31,7 +31,7 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 ![name_page jpg](https://user-images.githubusercontent.com/86859884/132996787-7a130300-e4e7-477f-9c3e-a20a86d006ce.png)
 
 
-2. After you have entered your first name, then either click the 'Continue' button or press 'Enter/Return' on your keyboard. Your first name should consist of at least 1 character and at most 15 characters.
+2. After you have entered your first name, then either click the 'Continue' button or press 'Enter/Return' on your keyboard. Your first name should consist of at least 1 character and at most 15 characters. You will hear a chime upon entry!
 
 3. On this main page, you will then have the choice to receive either a daily affirmation or daily mantra to use. It is your choice which you would like to receive. ![welcome_page jpg](https://user-images.githubusercontent.com/86859884/132996758-9319d0e0-a452-41c4-847c-bf2c8c03bc7f.png)
 

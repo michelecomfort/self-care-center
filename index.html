@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
   <main class="container">
-
-      <section class="login box">
-        <h1>Welcome to the Self Care Center</h1>
-        <p>Enter Your Name to Continue</p>
-          <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="first name" required="required" min="1" max="12" id="name-input" autofocus/>
-            <button class="enter-button button" type="button">Continue</button>
-      </section>
-
-    <article class="main-section hidden">
-
+    <section class="login box">
+      <h1>Welcome to the Self Care Center</h1>
+      <p>Enter Your Name to Continue</p>
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="first name" required="required" min="1" max="12" id="name-input" autofocus />
+      <button class="enter-button button" type="button">Continue</button>
+    </section>
+    <article class="hidden" id="main-section">
       <heading>
         <audio src="sounds/chime.mp3" id="audio"></audio>
         <h1 class="heading item">✨ Self Care Center ✨</h1>
-        <h1 class="welcome item fade-in">Welcome, Name</h1>
+        <h1 class="welcome item fade-in" id="welcome">Welcome, Name</h1>
         <h2 class="question item">Which type of message?</h2>
       </heading>
-
       <section class="input-selector item box">
         <label>
-          <input class="radioInput" name="radioBtn" type="radio" id="affirmation" value="affirmation"/><em>affirmation</em></label>
+          <input class="radioInput" name="radioBtn" type="radio" id="affirmation" value="affirmation" /><em>affirmation</em></label>
         <label>
-          <input class="radioInput" name="radioBtn" type="radio" id="mantra" value="mantra"/><em>mantra</em></label>
+          <input class="radioInput" name="radioBtn" type="radio" id="mantra" value="mantra" /><em>mantra</em></label>
         <aside>
-          <button class="receiveBtn button">Receive Message</button>
+          <button class="button" id="receiveBtn">Receive Message</button>
         </aside>
       </section>
-
       <section class="message-reveal item box">
         <img src="assets/meditate.svg" alt="meditating-person" class="fade-in">
       </section>
-
     </article>
   </main>
-
   <script type="text/javascript" src="main.js"></script>
 </body>
-
 </html>

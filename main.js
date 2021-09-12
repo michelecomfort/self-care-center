@@ -31,18 +31,18 @@ var affirmations = ["I choose to be happy and love myself everyday",
   "I choose to be kind to myself and love myself unconditionally"
 ]
 
-var mantraBtn = document.getElementById("mantra")
-var affirmationBtn = document.getElementById("affirmation")
-var receiveMessageBtn = document.querySelector(".receiveBtn")
+var loginSection = document.querySelector(".login")
 var messageReveal = document.querySelector(".message-reveal")
 var enterBtn = document.querySelector(".enter-button")
-var personName = document.querySelector(".name")
+var mantraBtn = document.getElementById("mantra")
+var affirmationBtn = document.getElementById("affirmation")
 var nameInput = document.getElementById("name-input")
-var welcomeMessage = document.querySelector(".welcome")
-var mainSection = document.querySelector(".main-section")
-var loginSection = document.querySelector(".login")
 var inputField = document.getElementById("input-field")
 var audio = document.getElementById("audio")
+var welcomeMessage = document.getElementById("welcome")
+var mainSection = document.getElementById("main-section")
+var receiveMessageBtn = document.getElementById("receiveBtn")
+
 
 receiveMessageBtn.addEventListener("click", retrieveMessage)
 enterBtn.addEventListener("click", login)

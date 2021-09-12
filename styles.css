@@ -30,14 +30,14 @@ img:hover,
 }
 
 .container {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-content: center; */
+  align-content: center;
 }
 
 .item {
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .heading,
@@ -52,6 +52,7 @@ img:hover,
   font-family: 'Great Vibes';
   font-size: 75px;
 }
+
 .question {
   margin-top: 20px;
 }
@@ -109,11 +110,11 @@ img:hover,
 }
 
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  0% {
+    opacity: 0;
+  }
 
-/* background-image alternatives */
-/* background-image: url(backgroundGradient.jpg); */
-/* background: rgb(19,77,113);
-background: linear-gradient(180deg, rgba(19,77,113,1) 0%, rgba(120,167,198,1) 50%, rgba(247,228,191,1) 100%); */
+  100% {
+    opacity: 1;
+  }
+}
