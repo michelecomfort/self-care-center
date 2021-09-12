@@ -31,9 +31,16 @@ var nameInput = document.getElementById("name-input")
 var welcomeMessage = document.querySelector(".welcome")
 var mainSection = document.querySelector(".main-section")
 var loginSection = document.querySelector(".login")
+var inputField = document.getElementById("input-field")
 
 receiveMessageBtn.addEventListener("click", retrieveMessage)
 enterBtn.addEventListener("click", login)
+
+nameInput.addEventListener("keyup", function(e) {
+  if(e.keyCode === 13){
+    login()
+  }
+})
 
 //get random index of one of the arrays
 function showMainSection() {
@@ -83,7 +90,6 @@ function retrieveAffirmation() {
 }
 
 function login() {
-  console.log("clicked!")
   if (nameInput.value) {
     welcomeMessage.innerText = `Welcome, ${nameInput.value.charAt(0).toUpperCase() + nameInput.value.slice(1)}!`
     showMainSection()
