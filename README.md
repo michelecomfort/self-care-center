@@ -28,6 +28,7 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 ## Instructions for users
 
 1. Upon first entering the site, please provide your first name in the name field. This will allow us to personalize the main page for you.
+![welcome_page jpg](https://user-images.githubusercontent.com/86859884/132996758-9319d0e0-a452-41c4-847c-bf2c8c03bc7f.png)
 
 2. After you have entered your first name, then either click the 'Continue' button or press 'Enter/Return' on your keyboard. Your first name should consist of at least 1 character and at most 15 characters.
 
