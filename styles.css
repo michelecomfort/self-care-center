@@ -19,8 +19,10 @@ img {
   width: 120px;
 }
 
-img:hover {
+img:hover,
+.welcome:hover {
   transform: translateY(0) scale(1.54);
+  transition: 500ms ease;
 }
 
 .hidden {
@@ -48,7 +50,7 @@ img:hover {
 
 .welcome {
   font-family: 'Great Vibes';
-  font-size: 60px;
+  font-size: 75px;
 }
 .question {
   margin-top: 20px;
@@ -75,10 +77,12 @@ img:hover {
 }
 
 .message-reveal {
+  color: #4d4d4d;
   font-size: 40px;
   height: 200px;
   margin: 70px auto 30px;
   padding-top: 40px;
+  vertical-align: middle;
   width: 60%;
 }
 
@@ -98,6 +102,15 @@ img:hover {
 .radioInput {
   margin: 0 30px;
   padding: 0 20px;
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 /* background-image alternatives */

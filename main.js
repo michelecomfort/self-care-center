@@ -7,7 +7,12 @@ var mantras = ["My mind is brilliant",
   "May my heart be kind my mind fierce and my spirit brave",
   "Expect nothing and appreciate everything",
   "I am free from sadness",
-  "I choose purpose over perfect"
+  "I choose purpose over perfect",
+  "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it",
+  "Don’t let yesterday take up too much of today",
+  "Every day is a second chance",
+  "Tell the truth and love everyone",
+  "Inhale the future, exhale the past"
 ]
 var affirmations = ["I choose to be happy and love myself everyday",
   "I am worthy",
@@ -18,7 +23,12 @@ var affirmations = ["I choose to be happy and love myself everyday",
   "I have it within me to solve any challenges that occur today",
   "I am enough",
   "I am creating my life exactly as I want it",
-  "I have what it takes"
+  "I have what it takes",
+  "I am in the process of becoming the best version of myself",
+  "I am full of energy and vitality and my mind is calm and peaceful",
+  "I am worthy of my dreams",
+  "I honor my body by trusting the signals that it sends me",
+  "I choose to be kind to myself and love myself unconditionally"
 ]
 
 var mantraBtn = document.getElementById("mantra")
@@ -32,19 +42,19 @@ var welcomeMessage = document.querySelector(".welcome")
 var mainSection = document.querySelector(".main-section")
 var loginSection = document.querySelector(".login")
 var inputField = document.getElementById("input-field")
+var audio = document.getElementById("audio")
 
 receiveMessageBtn.addEventListener("click", retrieveMessage)
 enterBtn.addEventListener("click", login)
-
 nameInput.addEventListener("keyup", function(e) {
   if(e.keyCode === 13){
     login()
   }
 })
 
-//get random index of one of the arrays
 function showMainSection() {
   mainSection.classList.remove("hidden")
+  audio.play()
 }
 
 function hideLoginSection() {
